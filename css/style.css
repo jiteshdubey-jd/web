@@ -454,6 +454,85 @@ h6,
   opacity: 1;
 }
 
+/** logo-slider **/
+
+/* .logo-slider {
+  overflow: hidden;
+  margin: 10px auto;
+  width: 90%;
+  background-color: red;
+}
+.logo-slider-container {
+  text-align: center;
+}
+
+.slider {
+  animation: slidein 30s linear infinite;
+  white-space: nowrap;
+}
+
+.logo-slider .slider .logos {
+  display: inline-block;
+  margin: 0;
+  height: 100%;
+}
+
+.logo-slider .slider .logos {
+  width: calc(100% / 5);
+  animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+
+} */
+
+.logo-slider {
+  overflow: hidden;
+  margin: auto;
+  width: 90%;
+}
+
+.logo-slider-container {
+  text-align: center;
+}
+
+.slider {
+  display: flex;
+  animation: slidein 30s linear infinite;
+  white-space: nowrap;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 50px;
+  padding: 0 50px;
+}
+
+.logos img {
+  width: 150px;
+  margin: 0 10px;
+  height: auto;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*** Footer ***/
 .footer .btn.btn-link {
   display: block;
